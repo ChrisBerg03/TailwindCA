@@ -40,7 +40,6 @@ async function getData() {
 
 async function displayData() {
     const posts = await getData();
-    console.log(posts);
 
     const container = document.querySelector("main");
 
