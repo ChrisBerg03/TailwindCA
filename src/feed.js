@@ -91,7 +91,6 @@ async function displayData() {
         </div>
         `;
 
-        // Append the new item div to the container
         container.appendChild(itemDiv);
     });
 }
