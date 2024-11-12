@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Profile</title>
+      <script type="module" crossorigin src="../assets/profile-YYzVmSf1.js"></script>
+      <link rel="modulepreload" crossorigin href="../assets/main-CpMxS9a6.js">
+      <link rel="stylesheet" crossorigin href="../assets/main-4J7EJ8A-.css">
+    </head>
+    <body>
+        <nav class="bg-gray-800">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="relative flex h-16 items-center justify-between">
+                    <div
+                        class="absolute inset-y-0 left-0 flex items-center sm:hidden"
+                    >
+                        <button
+                            type="button"
+                            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                            aria-controls="mobile-menu"
+                            aria-expanded="false"
+                        >
+                            <span class="absolute -inset-0.5"></span>
+                            <span class="sr-only">Open main menu</span>
+                            <svg
+                                class="block h-6 w-6"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                                data-slot="icon"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                                />
+                            </svg>
+                            <svg
+                                class="hidden h-6 w-6"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                                data-slot="icon"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M6 18 18 6M6 6l12 12"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="flex items-center justify-center sm:items-stretch sm:justify-start"
+                    >
+                        <div class="hidden sm:ml-6 sm:block">
+                            <div class="flex space-x-4">
+                                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                                <a
+                                    href="/feed/"
+                                    class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 duration-500 transition-all"
+                                    aria-current="page"
+                                    >Feed</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="max-w-md mx-auto">
+                        <label
+                            for="default-search"
+                            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+                            >Search</label
+                        >
+                        <div class="relative">
+                            <div
+                                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+                            >
+                                <svg
+                                    class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                                    />
+                                </svg>
+                            </div>
+                            <input
+                                type="search"
+                                id="default-search"
+                                class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Search Mockups, Logos..."
+                                required
+                            />
+                            <button
+                                type="submit"
+                                class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            >
+                                Search
+                            </button>
+                        </div>
+                    </form>
+
+                    <div
+                        class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+                    >
+                        <!-- Profile dropdown -->
+                        <div class="relative ml-3">
+                            <div>
+                                <button
+                                    type="button"
+                                    class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                                    id="user-menu-button"
+                                    aria-expanded="false"
+                                    aria-haspopup="true"
+                                >
+                                    <span class="absolute -inset-1.5"></span>
+                                    <span class="sr-only">Open user menu</span>
+                                    <img
+                                        id="profileImg"
+                                        class="h-8 w-8 rounded-full"
+                                        src=""
+                                    />
+                                </button>
+                            </div>
+                            <div
+                                class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
+                                role="menu"
+                                aria-orientation="vertical"
+                                aria-labelledby="user-menu-button"
+                                tabindex="-1"
+                            >
+                                <a
+                                    href="/profile/"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-slate-300"
+                                    role="menuitem"
+                                    tabindex="-1"
+                                    id="user-menu-item-0"
+                                    >Profile</a
+                                >
+                                <a
+                                    href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-slate-300"
+                                    role="menuitem"
+                                    tabindex="-1"
+                                    id="user-menu-item-2"
+                                    >Sign out</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="sm:hidden hidden" id="mobile-menu">
+                <div class="space-y-1 px-2 pb-3 pt-2">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                    <a
+                        href="/feed/"
+                        class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+                        aria-current="page"
+                        >Feed</a
+                    >
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div
+                class="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-16 bg-white shadow-xl rounded-lg text-gray-900"
+            >
+                <div class="rounded-t-lg h-32 overflow-hidden">
+                    <img
+                        id="backgroundImg"
+                        class="object-cover object-top w-full"
+                        src="https://img.freepik.com/free-photo/abstract-background-pontillize_58702-6153.jpg?t=st=1731339047~exp=1731342647~hmac=00911bba00e8d1083360d118a2f6a24749f805c397727eff0cf72d281058043e&w=2000"
+                        alt="Mountain"
+                    />
+                </div>
+                <div
+                    class="mx-auto w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden"
+                >
+                    <img
+                        id="profileImage"
+                        class="object-cover object-center h-32"
+                        src=""
+                        alt="Profile picture"
+                    />
+                </div>
+                <div class="text-center mt-2">
+                    <h2 id="nameContainer" class="font-semibold"></h2>
+                    <p class="text-gray-500">Some random dummy text</p>
+                </div>
+                <ul
+                    class="py-4 mt-2 text-gray-700 flex items-center justify-around"
+                >
+                    <li class="flex flex-col items-center justify-around">
+                        <svg
+                            class="w-4 fill-current text-blue-900"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                        >
+                            <path
+                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"
+                            />
+                        </svg>
+                        <div id="starContainer">0</div>
+                    </li>
+                    <li class="flex flex-col items-center justify-between">
+                        <svg
+                            class="w-4 fill-current text-blue-900"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                        >
+                            <path
+                                d="M7 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0 1c2.15 0 4.2.4 6.1 1.09L12 16h-1.25L10 20H4l-.75-4H2L.9 10.09A17.93 17.93 0 0 1 7 9zm8.31.17c1.32.18 2.59.48 3.8.92L18 16h-1.25L16 20h-3.96l.37-2h1.25l1.65-8.83zM13 0a4 4 0 1 1-1.33 7.76 5.96 5.96 0 0 0 0-7.52C12.1.1 12.53 0 13 0z"
+                            />
+                        </svg>
+                        <div id="followContainer">0</div>
+                    </li>
+                    <li class="flex flex-col items-center justify-around">
+                        <svg
+                            class="w-4 fill-current text-blue-900"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                        >
+                            <path
+                                d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"
+                            />
+                        </svg>
+                        <div id="workContainer">0</div>
+                    </li>
+                </ul>
+                <div class="p-4 border-t mx-8 mt-2">
+                    <button
+                        id="followBtn"
+                        class="w-1/2 block mx-auto rounded-full bg-gray-900 hover:shadow-lg font-semibold text-white px-6 py-2"
+                    >
+                        Follow
+                    </button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
